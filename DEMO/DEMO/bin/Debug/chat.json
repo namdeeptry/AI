@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Text": "hello",
+    "IsUser": true,
+    "Time": "2025-08-20T18:11:43.8585637+07:00"
+  },
+  {
+    "Id": 2,
+    "Text": "<think>\n\n</think>\n\nHello! How can I assist you today? 😊",
+    "IsUser": false,
+    "Time": "2025-08-20T18:11:48.4531512+07:00"
+  }
+]
