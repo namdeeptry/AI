@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using OllamaSharp;
@@ -11,7 +12,7 @@ namespace DEMO.Services
     public class ChatService
     {
         private readonly OllamaApiClient _client;
-        private readonly string _defaultModel = "deepseek-r1:1.5b";
+        private readonly string _defaultModel = "qwen2:7b";
 
         public ChatService()
         {
@@ -52,6 +53,7 @@ namespace DEMO.Services
                 }
 
                 var result = sb.ToString().Trim();
+                result = System.Text.RegularExpressions.Regex.Replace(result, "<think>[\\s\\S]*?</think>", "", RegexOptions.IgnoreCase).Trim();
                 return string.IsNullOrEmpty(result) ? "Xin lỗi, tôi không thể trả lời câu hỏi này." : result;
             }
             catch (Exception ex)

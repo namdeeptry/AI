@@ -30,41 +30,35 @@ namespace DEMO.View
 
         private void MessageList_TargetUpdated(object sender, DataTransferEventArgs e)
         {
-            if (MessageList.Items.Count > 0)
+            if (sender is ListBox listBox && listBox.Items.Count > 0)
             {
-                // Scroll xuống item cuối cùng
-                MessageList.ScrollIntoView(MessageList.Items[MessageList.Items.Count - 1]);
-
-                // Đảm bảo scroll đến bottom hoàn toàn
-                var border = VisualTreeHelper.GetChild(MessageList, 0) as Decorator;
-                if (border != null)
-                {
-                    var scrollViewer = border.Child as ScrollViewer;
-                    scrollViewer?.ScrollToEnd();
-                }
+                listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
             }
         }
 
         private void Composer_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
+            // Enter = gửi, Shift+Enter = xuống dòng
+            if (e.Key == Key.Enter && !Keyboard.IsKeyDown(Key.LeftShift))
             {
-                // Kiểm tra có phải Shift+Enter không (cho xuống dòng)
-                if (Keyboard.Modifiers.HasFlag(ModifierKeys.Shift))
+                if (DataContext is MainViewModel vm && vm.SendMessageCommand.CanExecute(null))
                 {
-                    // Shift+Enter: cho phép xuống dòng (không làm gì)
-                    return;
-                }
-
-                // Enter: gửi tin nhắn
-                e.Handled = true; // Ngăn Enter tạo line break
-
-                var viewModel = DataContext as MainViewModel;
-                if (viewModel?.SendMessageCommand.CanExecute(null) == true)
-                {
-                    viewModel.SendMessageCommand.Execute(null);
+                    vm.SendMessageCommand.Execute(null);
+                    e.Handled = true; // chặn xuống dòng mặc định
                 }
             }
+        }
+
+        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+        private void StackPanel_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
         }
     }
 }

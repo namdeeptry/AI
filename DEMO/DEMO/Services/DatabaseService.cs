@@ -28,7 +28,7 @@ namespace DEMO.Services
                 messages.Add(msg);
 
                 // Bước 4: Chỉ giữ 10 tin nhắn gần nhất
-                const int maxMessages = 10;
+                const int maxMessages = 20;
                 if (messages.Count > maxMessages)
                 {
                     // Xóa những tin nhắn cũ, chỉ giữ 10 tin nhắn cuối

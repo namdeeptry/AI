@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\AI\\DEMO\\",
+  "WorkspaceRootPath": "E:\\AI\\AI\\DEMO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\demo\\demo\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\demo\\demo\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\ai\\demo\\demo\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\demo\\demo\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|E:\\AI\\AI\\DEMO\\demo\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|E:\\AI\\AI\\DEMO\\demo\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\demo\\demo\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|E:\\AI\\AI\\DEMO\\demo\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\demo\\demo\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|e:\\ai\\ai\\demo\\demo\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1C7437-11A0-4395-BB69-7D544B13EF33}|DEMO\\DEMO.csproj|solutionrelative:demo\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -33,6 +33,19 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "E:\\AI\\AI\\DEMO\\DEMO\\View\\MainView.xaml",
+              "RelativeDocumentMoniker": "DEMO\\View\\MainView.xaml",
+              "ToolTip": "E:\\AI\\AI\\DEMO\\DEMO\\View\\MainView.xaml",
+              "RelativeToolTip": "DEMO\\View\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-20T10:45:04.57Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -42,51 +55,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainView.xaml.cs",
-              "DocumentMoniker": "E:\\AI\\DEMO\\DEMO\\View\\MainView.xaml.cs",
-              "RelativeDocumentMoniker": "DEMO\\View\\MainView.xaml.cs",
-              "ToolTip": "E:\\AI\\DEMO\\DEMO\\View\\MainView.xaml.cs",
-              "RelativeToolTip": "DEMO\\View\\MainView.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T11:08:37.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainView.xaml",
-              "DocumentMoniker": "E:\\AI\\DEMO\\DEMO\\View\\MainView.xaml",
-              "RelativeDocumentMoniker": "DEMO\\View\\MainView.xaml",
-              "ToolTip": "E:\\AI\\DEMO\\DEMO\\View\\MainView.xaml",
-              "RelativeToolTip": "DEMO\\View\\MainView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-20T10:45:04.57Z",
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "E:\\AI\\AI\\DEMO\\DEMO\\View\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "DEMO\\View\\MainView.xaml.cs",
+              "ToolTip": "E:\\AI\\AI\\DEMO\\DEMO\\View\\MainView.xaml.cs",
+              "RelativeToolTip": "DEMO\\View\\MainView.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAywCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T03:45:14.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "DatabaseService.cs",
-              "DocumentMoniker": "E:\\AI\\DEMO\\DEMO\\Services\\DatabaseService.cs",
+              "DocumentMoniker": "E:\\AI\\AI\\DEMO\\DEMO\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "DEMO\\Services\\DatabaseService.cs",
-              "ToolTip": "E:\\AI\\DEMO\\DEMO\\Services\\DatabaseService.cs",
+              "ToolTip": "E:\\AI\\AI\\DEMO\\DEMO\\Services\\DatabaseService.cs",
               "RelativeToolTip": "DEMO\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T09:48:12.735Z",
+              "WhenOpened": "2025-08-22T03:33:13.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ChatService.cs",
-              "DocumentMoniker": "E:\\AI\\DEMO\\DEMO\\Services\\ChatService.cs",
+              "DocumentMoniker": "E:\\AI\\AI\\DEMO\\DEMO\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "DEMO\\Services\\ChatService.cs",
-              "ToolTip": "E:\\AI\\DEMO\\DEMO\\Services\\ChatService.cs",
+              "ToolTip": "E:\\AI\\AI\\DEMO\\DEMO\\Services\\ChatService.cs",
               "RelativeToolTip": "DEMO\\Services\\ChatService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwEcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowBUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T09:41:20.177Z",
               "EditorCaption": ""
@@ -95,11 +96,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainViewModel.cs",
-              "DocumentMoniker": "E:\\AI\\DEMO\\DEMO\\ViewModel\\MainViewModel.cs",
+              "DocumentMoniker": "E:\\AI\\AI\\DEMO\\DEMO\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "DEMO\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "E:\\AI\\DEMO\\DEMO\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "E:\\AI\\AI\\DEMO\\DEMO\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "DEMO\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAYwH8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T09:31:40.734Z",
               "EditorCaption": ""

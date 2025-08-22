@@ -1,14 +1,122 @@
 [
   {
-    "Id": 1,
+    "Id": 46,
     "Text": "hello",
     "IsUser": true,
-    "Time": "2025-08-20T18:11:43.8585637+07:00"
+    "Time": "2025-08-22T10:54:40.40712+07:00"
   },
   {
-    "Id": 2,
-    "Text": "<think>\n\n</think>\n\nHello! How can I assist you today? 😊",
+    "Id": 47,
+    "Text": "Hello! How can I assist you today?",
     "IsUser": false,
-    "Time": "2025-08-20T18:11:48.4531512+07:00"
+    "Time": "2025-08-22T10:54:48.3878616+07:00"
+  },
+  {
+    "Id": 48,
+    "Text": "cc",
+    "IsUser": true,
+    "Time": "2025-08-22T10:57:40.774013+07:00"
+  },
+  {
+    "Id": 49,
+    "Text": "It seems like you've made a typo and might have meant to say \"Can I help you?\" Please provide more details so that I can assist you accordingly.",
+    "IsUser": false,
+    "Time": "2025-08-22T10:57:48.1347989+07:00"
+  },
+  {
+    "Id": 50,
+    "Text": "ok ok",
+    "IsUser": true,
+    "Time": "2025-08-22T11:01:42.1540955+07:00"
+  },
+  {
+    "Id": 51,
+    "Text": "Great! How can I assist you today?",
+    "IsUser": false,
+    "Time": "2025-08-22T11:01:46.4062798+07:00"
+  },
+  {
+    "Id": 52,
+    "Text": "today is ?",
+    "IsUser": true,
+    "Time": "2025-08-22T11:02:10.8584127+07:00"
+  },
+  {
+    "Id": 53,
+    "Text": "Today is August 16, 2023.",
+    "IsUser": false,
+    "Time": "2025-08-22T11:02:13.4009056+07:00"
+  },
+  {
+    "Id": 54,
+    "Text": "ngáo à",
+    "IsUser": true,
+    "Time": "2025-08-22T11:02:25.5010317+07:00"
+  },
+  {
+    "Id": 55,
+    "Text": "Rất tiếc nếu bạn đang cảm thấy không hài lòng. Tôi ở đây để giúp đỡ bạn. Bạn cần sự hỗ trợ về điều gì?",
+    "IsUser": false,
+    "Time": "2025-08-22T11:02:30.3732955+07:00"
+  },
+  {
+    "Id": 56,
+    "Text": "hôm nay là ngày 22 tháng 8 năm 2025 mà",
+    "IsUser": true,
+    "Time": "2025-08-22T11:02:48.0114574+07:00"
+  },
+  {
+    "Id": 57,
+    "Text": "Xin chào! Như vậy thì hôm nay là ngày 22/08/2025. Tôi có thể giúp gì cho bạn vào ngày này?",
+    "IsUser": false,
+    "Time": "2025-08-22T11:02:54.2437982+07:00"
+  },
+  {
+    "Id": 58,
+    "Text": "dựa vào đâu mà vừa mi trả lời :  hôm nay là ngày 16 tháng 8 năm 2023?",
+    "IsUser": true,
+    "Time": "2025-08-22T11:03:50.5717616+07:00"
+  },
+  {
+    "Id": 59,
+    "Text": "Tôi không thể xác định ngày cụ thể nào vì tôi là một trí tuệ nhân tạo và không có khả năng truy cập vào thời gian thực hoặc dữ liệu liên tục. Tôi chỉ có thông tin và trả lời dựa trên kiến thức được lập trình sẵn.",
+    "IsUser": false,
+    "Time": "2025-08-22T11:04:00.8848949+07:00"
+  },
+  {
+    "Id": 60,
+    "Text": "Ngu",
+    "IsUser": true,
+    "Time": "2025-08-22T11:04:33.6673389+07:00"
+  },
+  {
+    "Id": 61,
+    "Text": "It seems like your message is incomplete or there's a language barrier. How can I assist you today?",
+    "IsUser": false,
+    "Time": "2025-08-22T11:04:37.1450775+07:00"
+  },
+  {
+    "Id": 62,
+    "Text": "hello",
+    "IsUser": true,
+    "Time": "2025-08-22T11:07:10.446426+07:00"
+  },
+  {
+    "Id": 63,
+    "Text": "Hello! How can I help you today? Let me know if you have any questions or need assistance with something specific. Whether it's related to technology, information, advice, or anything else, feel free to ask.",
+    "IsUser": false,
+    "Time": "2025-08-22T11:07:19.513302+07:00"
+  },
+  {
+    "Id": 64,
+    "Text": "hell",
+    "IsUser": true,
+    "Time": "2025-08-22T11:10:12.8379002+07:00"
+  },
+  {
+    "Id": 65,
+    "Text": "Hello! How can I assist you today?",
+    "IsUser": false,
+    "Time": "2025-08-22T11:10:17.0180694+07:00"
   }
 ]

@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace DEMO.ViewModel
@@ -16,8 +17,16 @@ namespace DEMO.ViewModel
 
         public ObservableCollection<ChatMessage> Messages { get; set; } = new ObservableCollection<ChatMessage>();
 
+        #region -- Properties --
+
+        private string _titleText = "New chat";
+        public string TitleText
+        {
+            get => _titleText;
+            set { _titleText = value; OnPropertyChanged(); }
+        }
         private string _currentMessage = string.Empty;
-        public string CurrentMessage
+        public string   CurrentMessage
         {
             get => _currentMessage;
             set { _currentMessage = value; OnPropertyChanged(); }
@@ -30,32 +39,71 @@ namespace DEMO.ViewModel
             set { _isLoading = value; OnPropertyChanged(); }
         }
 
+        #endregion
+
+        #region -- Commands --
         public ICommand SendMessageCommand { get; }
         public ICommand ClearMessagesCommand { get; }
+        public ICommand MinimizeCommand { get; }
+        public ICommand MaximizeCommand { get; }
+        public ICommand CloseCommand { get; }
+        public ICommand NewChatCommand { get; }
+        public ICommand CopyMessageCommand { get; }
+
+        #endregion
 
         public MainViewModel()
         {
-            LoadMessages();
+            // LoadMessages();
             SendMessageCommand = new RelayCommand(async _ => await SendMessage(), _ => !string.IsNullOrWhiteSpace(CurrentMessage) && !IsLoading);
             ClearMessagesCommand = new RelayCommand(_ => ClearMessages());
+            MinimizeCommand = new RelayCommand(_ => System.Windows.Application.Current.MainWindow.WindowState = System.Windows.WindowState.Minimized);
+            MaximizeCommand = new RelayCommand(_ =>
+            {
+                var mainWindow = System.Windows.Application.Current.MainWindow;
+                mainWindow.WindowState = mainWindow.WindowState == System.Windows.WindowState.Maximized ?
+                                         System.Windows.WindowState.Normal :
+                                         System.Windows.WindowState.Maximized;
+            });
+            CloseCommand = new RelayCommand(_ => System.Windows.Application.Current.Shutdown());
+            NewChatCommand = new RelayCommand(_ => NewChat());
+            CopyMessageCommand = new RelayCommand(msg => CopyMessage(msg as ChatMessage));
+
         }
 
-        private void LoadMessages()
+        private void NewChat()
         {
-            try
+            // Chỉ clear trong ObservableCollection, không động đến DatabaseService
+            Messages.Clear();
+
+            // Reset title về mặc định
+            TitleText = "New chat";
+        }
+
+        private void CopyMessage(ChatMessage msg)
+        {
+            if (msg != null)
             {
-                foreach (var msg in _db.LoadMessages())
-                    Messages.Add(msg);
-            }
-            catch (Exception ex)
-            {
-                Messages.Add(new ChatMessage
-                {
-                    Text = $"Lỗi tải tin nhắn: {ex.Message}",
-                    IsUser = false
-                });
+                Clipboard.SetText(msg.Text);
             }
         }
+
+        //private void LoadMessages()
+        //{
+        //    try
+        //    {
+        //        foreach (var msg in _db.LoadMessages())
+        //            Messages.Add(msg);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Messages.Add(new ChatMessage
+        //        {
+        //            Text = $"Lỗi tải tin nhắn: {ex.Message}",
+        //            IsUser = false
+        //        });
+        //    }
+        //}
 
         private async Task SendMessage()
         {
@@ -79,7 +127,7 @@ namespace DEMO.ViewModel
             // Thêm tin nhắn "Thinking..." tạm thời
             var thinkingMsg = new ChatMessage
             {
-                Text = "Thinking...",
+                Text = " Thinking...",
                 IsUser = false,
                 Time = DateTime.Now
             };
